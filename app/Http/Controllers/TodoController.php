@@ -34,7 +34,7 @@ class TodoController extends Controller
      */
     public function create()
     {
-        return view('todo.create');
+        return view('todo');
     }
 
     /**
@@ -54,7 +54,7 @@ class TodoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $id aaa
      * @return \Illuminate\Http\Response
      */
     public function show($id)
