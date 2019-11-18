@@ -1,9 +1,9 @@
 @extends ('layouts.app')
 @section ('content')
 
-<h1 class="page-header">ToDo一覧</h1>
+<h1 class="page-header">{{ $user->name }}のTodo一覧</h1>
 <p class="text-right">
-  <a class="btn btn-success" href="/todo/create">新規作製</a>  <!-- 相対URIによる指定 -->
+  <a class="btn btn-success" href="/todo/create">新規作成</a>  <!-- 相対URIによる指定 -->
 </p>
 <table class="table">
   <thead class="thead-light">

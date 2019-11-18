@@ -23,7 +23,9 @@ class TodoController extends Controller
     public function index()
     {
         $todos = $this->todo->getByUserId(Auth::id()); // Collectionインスタンス
-        return view('todo.index', compact('todos'));
+        $user = Auth::user();
+        //dd($user);
+        return view('todo.index', compact('todos','user'));
     }
 
     /**
