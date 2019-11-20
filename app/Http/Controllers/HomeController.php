@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return redirect()->to('/home');
+        return redirect()->to('/todo');
     }
 }
 
